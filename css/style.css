@@ -1,0 +1,140 @@
+:root {
+    --clr-primary-brorange: hsl(31, 77%, 52%);
+    --clr-primary-dkcyan: hsl(184, 100%, 22%);
+    --clr-primary-vdkcyan: hsl(179, 100%, 13%);
+    --clr-neutral-trwhite: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+    --clr-neutral-vligray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+    --clr-neutral-gray:hsl(0, 0%, 98%); 
+    --ff-bold-700:'Big Shoulders Display', cursive;
+    --ff-regula-400: 'Lexend Deca', sans-serif;
+}
+
+
+/*- Mobile: 375px
+- Desktop: 1440px*/
+
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;    
+}
+
+body {
+    padding: 0;
+    font-family: var(--ff-regula-400);
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--clr-neutral-trwhite);    
+    height: 100vh;
+    background-color: var(--clr-neutral-vligray);    
+}
+
+h1, 
+p, 
+a, 
+img {
+    margin: 0 3rem;
+}
+
+h1 {
+    font-family: var(--ff-bold-700);
+    color: var(--clr-neutral-gray);
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-size: 2.2rem;    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 2rem;
+}
+
+.card {       
+    max-width: 920px;     
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;    
+}
+
+.icon {
+    margin-top: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 4.2rem;
+    margin-bottom: 2.5rem;
+    transition: .5s;
+}
+
+.card a {
+    text-decoration: none;
+    background: var(--clr-neutral-gray);
+    padding: 0.5rem 2rem;
+    border-radius: 50px;    
+}
+
+.sedans {
+    background: var(--clr-primary-brorange);
+    height: 100%;
+}
+
+.sedans a {
+    color: var(--clr-primary-brorange);
+}
+
+.suvs {
+    background: var(--clr-primary-dkcyan);
+    height: 100%;
+}
+
+.suvs a {
+    color: var(--clr-primary-dkcyan);
+}
+
+.luxury {
+    background: var(--clr-primary-vdkcyan);
+    height: 100%;    
+}
+
+.luxury a {
+    color: var(--clr-primary-vdkcyan);
+}
+
+.btn:hover {
+    background: none;
+    border: 1px solid var(--clr-neutral-gray);
+    color: var(--clr-neutral-gray);
+}
+
+@media (max-width: 800px) {
+    body {
+        overflow: auto;
+    }
+    .card {
+        flex-direction: column;
+    }
+
+    .btn {        
+        margin-top: 1.2rem;
+        margin-bottom: 2.5rem;
+        
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: gray;    
+}
+
+.attribution a { 
+    color: hsl(180, 45%, 44%);
+    margin: 0; 
+}
