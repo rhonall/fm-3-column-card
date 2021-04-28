@@ -21,6 +21,7 @@
 }
 
 body {
+    margin: 0;
     padding: 0;
     font-family: var(--ff-regula-400);
     font-size: 15px;
@@ -50,8 +51,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    margin: 2rem;
+    height: 100%;    
 }
 
 .card {       
@@ -71,6 +71,7 @@ h1 {
     margin-top: 4.2rem;
     margin-bottom: 2.5rem;
     transition: .5s;
+    border: solid 1px transparent;
 }
 
 .card a {
